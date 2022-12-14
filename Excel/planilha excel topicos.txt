@@ -1,0 +1,22 @@
+planilha 1 - seleção e manipulação de intervalos;
+formatação por tipos de celulas: texto, numero, data, moeda;
+formatação condicional: campo genero(m ou f) e campo valor patrocinio(> ou < media patriocinio)
+função datadif: campo idade;
+função =SOMA: total patrocinio
+função =MÉDIA: média patrocinio
+formula procV
+
+planilha 2
+filtro de patrocinadores com valor abaixo da média
+classificação Z -> A
+função =SOMA: total patrocinio
+função =MÉDIA: média patrocinio
+
+planilha 3
+filtro de patrocinadores com valor de idade < 30 anos
+função =SOMA: total patrocinio
+função =MÉDIA: média patrocinio
+
+planilha 4
+tabela dinamica com soma do valor dos patrocinios feitos pelo genero 'm'
+grafico de pizza soma do valor dos patrocinios feitos pelo genero 'm'
