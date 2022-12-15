@@ -113,32 +113,7 @@ $(document).ready(function () {
     }
   });
 
-  /* Validação para datas superiores a 18 anos */
-
-  $("#nasc").blur(function () {
-    var dataAtual = new Date();
-    var nascimento = $(this).val().substring(0, 4);
-    var mes = $(this).val().substring(5, 7);
-    var dia = $(this).val().substring(8, 10);
-    idade = parseInt(dataAtual.getFullYear()) - nascimento;
-
-    if (mes > dataAtual.getMonth() + 1) {
-      idade--;
-    } else if (mes == dataAtual.getMonth() + 1 && dia > dataAtual.getDate()) {
-      idade--;
-    }
-    if (idade < 19 || idade > 130) {
-      $(this).css({ border: "red solid 3px", boxshadow: "0px 0px 4px red" });
-      alert(
-        "Desculpe, para se cadastrar conosco você tem que ter mais de 18 anos."
-      );
-    } else {
-      $(this).css({
-        border: "green solid 3px",
-        boxshadow: "0px 0px 4px green",
-      });
-    }
-  });
+  
 
   /* Validação de confirmação de senha igual a senha */
 
